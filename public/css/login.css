@@ -1,0 +1,141 @@
+/*--------------------Mobile First--------------------*/
+
+
+/*Login register for cellphones*/
+
+
+main .login-main{
+    display:flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+main .login-main-sendButton{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;      
+    background-color: transparent;
+    border-radius: 5px;
+    border-style: none;
+    outline: none;
+    color: #666;
+    padding: 5px;
+    font-size: 1em;
+    width: 100%;
+}
+main .login-main-sendButton button.login-main-sendInfo{    
+    background-color:cornflowerblue;
+    border-style: none;
+    outline: none;
+    color: whitesmoke;
+    padding: 5px;
+    font-size: 1em;    
+    border-radius: 5px;
+    border-style: none;
+    outline: none;
+    height: 35px;  
+}
+main .login-main-sendButton button.login-main-newAccount{    
+    background-color:transparent;
+    border-style: none;
+    outline: none;
+    color: cornflowerblue;
+    padding: 15px;
+    font-size: 1em;    
+}
+main .login-main-buttonHelp{
+    display:flex;
+    flex-direction: column;
+    margin: 10px;
+        
+}
+main .login-main-buttonHelp a{    
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: grey;
+    font-size: small;
+}
+
+
+/*----------------------Tablet------------------------*/
+
+
+@media (min-width: 361px){
+
+    /*Login  main other devices*/
+    
+    main .login-main-sendButton button{            
+        font-size: 1.2em;
+        background-color: transparent;     
+    }
+    main .login-main-buttonHelp a{
+        font-size: medium;
+    }
+    
+}
+
+
+/*----------------------Desktop-----------------------*/
+
+
+@media (min-width: 769px){
+
+    /*Login main for desktops*/
+    
+    main .login-main-sendButton .login-main-sendInfo{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);                  
+    }
+    main .login-main-sendButton button.login-main-sendInfo{    
+        background-color:cornflowerblue;
+        border-style: none;
+        outline: none;
+        color: whitesmoke;
+        padding: 5px;
+        font-size: 1em;    
+        border-radius: 5px;
+        border-style: none;
+        outline: none;
+        height: 50px;
+        font-size: x-large;  
+    }        
+    main .login-main-sendButton .login-main-sendInfo{
+        transition: all 0.3s;
+    }
+    main .login-main-sendButton .login-main-buttonHelp{
+        flex-direction: row; 
+        justify-content: space-between;
+        margin-top: 30px;  
+    }    
+    main .login-main-sendButton .login-main-buttonHelp-left{
+        transition: all 0.3s;
+    } 
+    main .login-main-sendButton .login-main-buttonHelp-right{
+        transition: all 0.3s;
+    }  
+
+    main .login-main-sendButton .login-main-sendInfo:hover{            
+        background-color: #0022AA;
+        cursor:pointer;
+    }
+    main .login-main-sendButton .login-main-buttonHelp-left:hover{            
+        color: #0022AA;
+        cursor:pointer;
+    }
+    main .login-main-sendButton .login-main-buttonHelp-right:hover{            
+        color: #0022AA;
+        cursor:pointer;
+    }    
+    main .login-main-sendButton button{            
+        font-size: 8em;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    main .login-main-buttonHelp a{
+        font-size: x-large;
+    }     
+}

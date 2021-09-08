@@ -1,0 +1,183 @@
+/*--------------------Mobile First--------------------*/
+
+/*Header*/
+
+header{    
+    background-color: #EAC926;
+    padding: 10px;
+}
+header .header-top-bar{
+    display: flex; 
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;       
+}
+header .header-top-bar .header-top-logo-left{ 
+ 
+    width: 50%;
+    padding: 10px;
+}
+
+header .header-top-bar .header-top-form{
+    display: flex;
+    flex-wrap: nowrap;    
+    width: 50%;
+    justify-content: center;
+    align-items: center; 
+}
+header .header-top-bar .header-top-form .input{
+    background-color: #FFF;
+    border-radius: 5px 0px 0px 5px;
+    border-style: none;
+    outline: none;
+    color: black;
+    padding: 3px 3px 3px 10px;
+    font-size: 0.7em;
+    width: 80%;
+    height: 50%; 
+}
+header .header-top-bar .header-top-form .submit{
+    background-color: #FFF;
+    border-radius: 0px 5px 5px 0px;
+    border-style: none;
+    color: #666; 
+    height: 50%;
+    padding-right: 10px;
+    transition: all 0.2s;
+}
+header .header-top-promo-right{
+    font-size:small;
+    font-weight: normal;    
+    text-align: center;
+    margin: auto;
+}
+header .header-bottom-bar{
+    display: none;
+}
+header .header-bottom-burger-menu{
+    text-align: center;
+    margin-top: 10px;
+}
+
+header .header-bottom-burger-menu i{
+    display: block;
+    background-color: #0044AA;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: auto;
+    padding: 10px;
+    max-width: 40px; 
+}
+
+/*--------------------Tablet--------------------*/
+
+
+@media (min-width: 361px){
+
+    /*Header for tablets*/   
+     
+    header .header-top-bar {                  
+        flex-wrap: nowrap;
+        justify-content:space-between;
+    }
+    header .header-top-bar .header-top-logo-left{
+        width: 33%;
+    }  
+    header .header-top-bar .header-top-form{        
+        width: 50%;        
+    }
+    header .header-top-bar .header-top-form .input{        
+        font-size: 0.9em;
+    }
+    header .header-top-bar .header-top-form .submit i{
+        font-size: 1.2em;
+    }        
+    header .header-top-promo-right{  
+        text-align: right;
+        width: 30%;        
+    }    
+    header .header-bottom-bar{
+        display: block;
+        margin: auto;
+        max-width: 100%;
+    }
+    header .header-navbar-main{
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+    header .header-bottom-navbar-left{
+        display: flex;
+        max-width: 50%;
+    }
+    header .header-bottom-navbar-right{
+        display: flex;
+        max-width: 50%;
+    }
+    header ul li{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:space-evenly;
+        list-style-type: none;
+        padding: 5px;     
+        margin: auto;
+    }    
+    header ul li a{    
+        text-decoration: none;
+        color: #4b4a4a;
+        padding: 5px 0;
+        font-size:xx-small;
+        text-align: center;
+    }        
+    header .header-bottom-burger-menu{
+        display: none;
+    }
+}
+
+
+/*--------------------Desktop--------------------*/
+
+
+@media (min-width: 769px){
+
+    /*Header for desktops*/
+    header .header-top-bar{
+        max-width: 80%;
+    }
+    header .header-top-bar .header-top-form .input{        
+        font-size: 1.2em;
+    }
+    header .header-top-bar .header-top-form .submit i{
+        font-size: 1.4em;
+        cursor: pointer;
+    }
+    header .header-top-bar .header-top-form:hover .submit{
+        color:#729bda;
+    }   
+    header .header-bottom-bar{
+        max-width: 80%;
+    }
+    header .header-top-bar .header-top-logo-left .header-logo{        
+        width: 80%; 
+        cursor: pointer;            
+    }
+    header .header-top-promo-right{
+        font-size: large;
+        text-align: right;
+    }
+    
+    header ul li{
+        padding: 10px 15px 10px 15px;     
+
+    }    
+    header ul li a{    
+        font-size:1.3em;
+        transition: all 0.1s;        
+    }
+    header ul li a:hover{      
+        color: black;
+        cursor: pointer;        
+    }
+}

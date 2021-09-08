@@ -1,0 +1,92 @@
+/*--------------------Mobile First--------------------*/
+
+
+/*Footer*/
+
+
+footer{
+    
+    width: 89%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 15% 0px 15%;
+    background-color: whitesmoke;
+    text-align: center;
+}
+footer .last{
+    display: flex;
+    flex-direction: column;
+    padding: auto; 
+}
+footer section article .promotion p{
+    font-size: 1em;
+    color: rgb(112, 110, 110);
+    padding: 10px;
+}
+footer section article .promotion .fa-footer i{
+    background-color: transparent;
+    color: #0044AA;
+    font-size: 2em;
+    height: 40px;
+    margin: 60px 0px 0px 0px;
+}
+footer section .copyright{    
+    font-size: 0.9em;
+    color: #666;
+    margin: 100px 0px 40px 0px;
+}
+
+
+/*--------------------Tablet--------------------*/
+
+
+@media (min-width: 361px){
+
+    /*Footer for tablets*/  
+
+    footer section article .promotion .fa-footer i{
+        transform: scale(1.2);
+    }   
+
+}
+
+
+/*--------------------Desktop--------------------*/
+
+
+@media (min-width: 769px){
+
+
+    /*Footer for desktops*/
+
+    footer{    
+        width: 89%;
+        margin-top: 20px;    
+        padding: 100px 0 0px 0;
+        background-color: whitesmoke;
+        text-align: none;
+    }
+    footer .last{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: auto;
+    }
+    footer .copyright{    
+        font-size: 0.9em;
+        color: #666;
+        padding: 150px 0px 20px 0px;
+    }
+    footer section article .promotion .fa-footer i{
+        transform: scale(1.4);
+        transition: 0.2s;
+    }
+    footer section article .promotion .fa-footer i:hover{       
+        background-color: transparent;
+        color: red;
+        font-size: 2em;
+        height: 40px;
+        margin: 60px 0px 0px 0px;
+    }
+}

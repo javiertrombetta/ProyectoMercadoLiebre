@@ -1,0 +1,245 @@
+/*--------------------Mobile First--------------------*/
+
+
+/*Main register for cellphones*/
+
+
+main .register-main-show{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 20px;  
+}
+main .register-main-top-label{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+main .register-main{
+    display:flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin-top: 20px;
+    margin-bottom: 100px;  
+}
+main .register-main-shadow{
+    display: flex;
+    flex-direction: column;
+}
+main .register-main-top-label label{
+    font-size: medium;
+    font-weight: bolder;
+}
+main .register-main-form{
+    display:flex;
+    flex-direction: column;    
+}
+
+main .register-main-sendButton{
+    margin-top: 20px;    
+}
+main form article .register-main-label label{
+    font-size: small;
+    font-weight: normal;
+    margin: auto;
+}
+main form article .register-main-inputBox{
+    background-color: transparent;
+    border-bottom: lightgrey;
+    border-top-style:hidden;
+    border-bottom-style:groove;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    outline: none;   
+    color: black;
+    padding: 3px;
+    font-size: 1em;
+    width: 100%;
+    height: 50%;
+    margin: 15px 0px 15px 0px;
+    
+}
+main .register-main-radioOptions{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+main .register-main-profile{
+    display: flex;
+    margin: 0px 5px 0px 0px;
+    padding: 15px 0 15px 0px;
+}
+main .register-main-profile p{
+    font-size: small;
+    padding-left: 5px;
+    color: rgb(83, 83, 83);
+ 
+    
+}
+main .register-main-checkOptions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+}
+main .register-main-checkbox{
+    display: flex;
+    margin: 5px 5px 5px 0px;
+    padding: 5px 0 5px 0px;
+}
+main .register-main-checkbox .register-main-checkbox-icon{
+    height: 15px;
+}
+main .register-main-checkbox p{
+    font-size: small;
+    padding-left: 5px;
+    color: rgb(83, 83, 83)
+}
+main .register-main-loadPhoto{
+    display: flex;
+    font-size: xx-small;
+    margin: 15px 0 15px 0;
+
+}
+main .register-main-sendButton{
+    display: flex;
+    justify-content: center;   
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    border-style: none;
+    outline: none;
+    color: #666;
+    padding: 5px;
+    font-size: 1em;
+    width: 100%;
+}
+main .register-main-sendButton button{    
+    background-color:cornflowerblue;
+    border-style: none;
+    outline: none;
+    color: whitesmoke;
+    padding: 5px;
+    font-size: 1em;
+    width: 60%;
+}
+
+
+/*----------------------Tablet------------------------*/
+
+
+@media (min-width: 361px){
+
+    /*Register main other devices*/
+ 
+    main .register-main-top-label{
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }    
+    main .register-main-top-label label{
+        font-size: x-large;
+        font-weight: bold;
+        margin: auto;        
+    }    
+    main .register-main-text{
+        transform:scale(0.9);
+    }
+    main .register-main p{
+        font-size: medium;
+    }    
+    
+    main form article .register-main-label label{
+        font-size: small;
+        font-weight: normal; 
+        margin: auto;
+    }
+    main .register-main-loadPhoto{        
+        font-size: smaller;        
+    }
+    main .register-main-sendButton button{            
+        font-size: 1.2em;
+        background-color: transparent;     
+    }
+    main .register-main-checkbox input{        
+        width: 1.2em;
+    }    
+}
+
+
+/*----------------------Desktop-----------------------*/
+
+
+@media (min-width: 769px){
+
+    /*Register main other devices*/
+    main .register-main-shadow{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        background-color: whitesmoke;
+    }
+    main .register-main{  
+        width: 40%;
+        opacity: 1;
+        animation: fadeIn 1.5s ease;          
+    }
+    main .register-main p{
+        font-size: large;
+    }
+    main .register-main-top-label{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        opacity: 1;
+        animation: fadeIn 1s ease;
+    }
+    main .register-main-top-label label{
+        text-shadow:1px 1px 3px grey;
+        font-size: xx-large;
+    }
+    
+    main .register-main-text{
+        transform:scale(0.9);
+    }
+    main .register-main-article{
+        margin-top: 20px;
+    }
+    main .register-main-checkbox input{        
+        width: 2em;
+        height: 20px;
+    }
+    main .register-main-sendButton{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);  
+    }
+    main .register-main-profile input{
+        width: 2em;
+        height: 20px;
+    }
+    main form article .register-main-inputBox{        
+        transition: width .2s ease, border-color .2s ease;
+    }
+    main form article .register-main-inputBox:hover{
+        border-color: #0044AA;
+    }
+    main form article .register-main-inputBox:focus{
+        border-color: #0044AA;
+    }
+    main .register-main-sendButton button{            
+        font-size: 1.8em;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    main form article .register-main-label label{
+        font-size: medium;
+        font-weight: normal;        
+    }
+    main .register-main-loadPhoto{        
+        font-size: large;
+    }
+    main .register-main-sendButton{
+        transition: all 0.3s;
+    } 
+
+    main .register-main-sendButton:hover{            
+        background-color: #0022AA;
+        cursor:pointer;
+    }
+    main .register-main-sendButton button:hover{            
+        background-color: transparent;
+        cursor:pointer;        
+    }     
+}
