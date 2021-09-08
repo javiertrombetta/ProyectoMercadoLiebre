@@ -19,7 +19,7 @@
                     </a> 
                 </div>
                 <form action="/search" method="POST" class="header-top-form">
-                    <input type="search" name="searchbar" placeholder="Buscar productos, marcas y más" class="input">
+                    <input type="search" name="searchbar" placeholder="Buscar productos, marcas y más" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Buscar productos, marcas y más'" class="input">
                     <button type="submit" class="submit">
                         <i class="fa fa-search"></i>
                     </button>                    
@@ -49,21 +49,42 @@
             </div>
         </header>
         <main>
-            <div class="register-main">
-            <!-- Formulario -->
-                <form action="/registerProcess" method="POST" class="register-main-form">
-                    <div class="register-main-shadow">
-                    <section>                                
-                        <input class="register-main-inputBox" type="text" name="username" placeholder="Nombre de Usuario" required>
-                    </section> 
-                    <section>                            
-                        <input class="register-main-inputBox" type="text" name="password" placeholder="Contraseña" required>
-                    </section>
-                    </div> 
-                    <section class="register-main-sendButton">            
-                        <button type="submit">Ingresar</button>
-                    </section> 
-                </form>
+            <div class="register-main-show">
+                <section class="register-main-top-label">
+                    <label>Ingresá con tu cuenta</label>
+                </section>
+                <section class="register-main"> 
+                    <!-- Formulario -->
+                    <form action="/registerProcess" method="POST" class="register-main-form">
+                        <div class="register-main-shadow">
+                            <div class="register-main-text">
+                                <article class= "register-main-article"> 
+                                    <div class="register-main-label">
+                                        <label>Ingresá tu usuario</label>
+                                    </div>             
+                                    <div>
+                                    <input class="register-main-inputBox" type="text" name="nameAndSurname" minlength="5" required placeholder="Ingresá tu usuario" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ingresá tu usuario'" class="input">
+                                    </div>
+                                </article>
+                                <article class= "register-main-article">
+                                    <div class="register-main-label">
+                                        <label>Ingresá tu contraseña</label>
+                                    </div>                  
+                                    <div>
+                                        <input class="register-main-inputBox" type="password" name="nameAndSurname" minlength="5" required placeholder="Ingresá tu contraseña" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ingresá tu contraseña'" class="input">
+                                    </div>
+                                </article>
+                            </div>
+                        </div> 
+                        <section class="login-main-sendButton">                                        
+                            <button class="login-main-sendInfo" type="submit">Ingresar</button>
+                            <div class="login-main-buttonHelp">
+                                <a class="login-main-buttonHelp-left" href="#">Me olvidé la clave</a>
+                                <a class="login-main-buttonHelp-right" href="/register">Creá tu cuenta</a>                                
+                            </div>
+                        </section> 
+                    </form>                    
+                </section>                
             </div>            
         </main>
         <footer>            

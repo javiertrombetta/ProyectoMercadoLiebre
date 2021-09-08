@@ -1,16 +1,30 @@
 /*Todas las etiquetas en conjunto*/
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: grey;
+    opacity: 1; /* Firefox */
+  }
+  
+::-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: grey;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: grey;
+}
 
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
-    border: 1px solid red;
+    box-sizing: border-box;    
+    /*border: 1px solid red;*/
 }
 
 /*Etiquetas específicas de estilo general*/
 
-h3{ padding-top: 15px;   
-    font-size: 20px;
+h3{ padding-top: 35px;
+    padding-left: 10px;   
+    font-size: medium;
+    font-weight: normal;
     color: #666;
 }
 
@@ -39,7 +53,8 @@ header .header-top-bar{
     margin: auto;
     justify-content: center;       
 }
-header .header-top-bar .header-top-logo-left{    
+header .header-top-bar .header-top-logo-left{ 
+ 
     width: 50%;
     padding: 10px;
 }
@@ -56,12 +71,11 @@ header .header-top-bar .header-top-form .input{
     border-radius: 5px 0px 0px 5px;
     border-style: none;
     outline: none;
-    color: #666;
+    color: black;
     padding: 3px 3px 3px 10px;
     font-size: 0.7em;
     width: 80%;
-    height: 50%;
-  
+    height: 50%; 
 }
 header .header-top-bar .header-top-form .submit{
     background-color: #FFF;
@@ -70,6 +84,7 @@ header .header-top-bar .header-top-form .submit{
     color: #666; 
     height: 50%;
     padding-right: 10px;
+    transition: all 0.2s;
 }
 header .header-top-promo-right{
     font-size:small;
@@ -123,20 +138,20 @@ main section .products{
     flex-wrap: wrap;
     flex-direction: row;
 }
-main section article{
+main section article.home-main-article{
     background-color: #fff;    
     margin: 5px;
 }
-main section article img{
+main section article.home-main-article img{
     width: 100%;
 }
-main section article .main-description{
+main section article.home-main-article .main-description{
     display: block;
     border-top: 1px solid #ebebeb;
     position: relative;
     padding: 15px;   
 }
-main section article i{
+main section article.home-main-article i{
     display: block;
     font-size: 16px;
     padding: 5px;
@@ -147,23 +162,24 @@ main section article i{
     background-color: #FFF;
     border-radius: 50%;
     position: absolute;
-    right: 20px;
-    top: -15px;    
+    right: 30px;
+    top: -15px;
+    transform: scale(0.8);   
 }
-main section article .main-description .price-discount{
+main section article.home-main-article .main-description .price-discount{
     display: flex;
 }
-main section article .main-description .price-discount .price{
+main section article.home-main-article .main-description .price-discount .price{
     font-size: smaller;
     font-weight: bold;
     padding-right: 10px;  
 }
-main section article .main-description .price-discount .discount{
+main section article.home-main-article .main-description .price-discount .discount{
     font-size: small;
     font-weight: normal;
     color: #39b54a;     
 }
-main section article .main-description .description{
+main section article.home-main-article .main-description .description{
     display: block;
     font-size: small;
     font-weight: normal;    
@@ -211,45 +227,123 @@ footer section .copyright{
 
 
 
+/*Login register*/
 
-/*Main register*/
-
-main .register-main{
+main .login-main{
     display:flex;
     flex-direction: column;
     max-width: 80%;
-    margin-top: 100px;
+    margin-top: 40px;
     margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto;    
 }
+
+main .login-main-sendButton{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;      
+    background-color: transparent;
+    border-radius: 5px;
+    border-style: none;
+    outline: none;
+    color: #666;
+    padding: 5px;
+    font-size: 1em;
+    width: 100%;
+}
+main .login-main-sendButton button.login-main-sendInfo{    
+    background-color:cornflowerblue;
+    border-style: none;
+    outline: none;
+    color: whitesmoke;
+    padding: 5px;
+    font-size: 1em;    
+    border-radius: 5px;
+    border-style: none;
+    outline: none;
+    height: 35px;  
+}
+main .login-main-sendButton button.login-main-newAccount{    
+    background-color:transparent;
+    border-style: none;
+    outline: none;
+    color: cornflowerblue;
+    padding: 15px;
+    font-size: 1em;    
+}
+main .login-main-buttonHelp{
+    display:flex;
+    flex-direction: column;
+    margin: 10px;
+        
+}
+main .login-main-buttonHelp a{    
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: grey;
+    font-size: small;
+}
+
+
+
+
+
+/*Main register*/
+main .register-main-show{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 20px;  
+}
+main .register-main-top-label{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+main .register-main{
+    display:flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin-top: 20px;
+    margin-bottom: 100px;  
+}
 main .register-main-shadow{
-    padding: 50px 10px 50px 10px;
+    display: flex;
+    flex-direction: column;
+}
+main .register-main-top-label label{
+    font-size: medium;
+    font-weight: bolder;
 }
 main .register-main-form{
     display:flex;
     flex-direction: column;    
 }
+
 main .register-main-sendButton{
     margin-top: 20px;    
 }
-main form section label{
-    font-size: medium;
-    font-weight: bold;
+main form article .register-main-label label{
+    font-size: small;
+    font-weight: normal;
     margin: auto;
-    padding-left: 15px; 
 }
-main form section .register-main-inputBox{
-    background-color: #FFF;
-    border-radius: 5px;
-    border-style: none;
-    outline: none;
-    color: #666;
+main form article .register-main-inputBox{
+    background-color: transparent;
+    border-bottom: lightgrey;
+    border-top-style:hidden;
+    border-bottom-style:groove;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    outline: none;   
+    color: black;
     padding: 3px;
     font-size: 1em;
-    width: 90%;
+    width: 100%;
     height: 50%;
-    margin: 15px;
+    margin: 15px 0px 15px 0px;
+    
 }
 main .register-main-radioOptions{
     display: flex;
@@ -258,49 +352,54 @@ main .register-main-radioOptions{
 }
 main .register-main-profile{
     display: flex;
-    margin: 15px;
-    padding: 15px;
+    margin: 0px 5px 0px 0px;
+    padding: 15px 0 15px 0px;
 }
 main .register-main-profile p{
-    font-size: 1em;
-    padding-left: 15px;
+    font-size: small;
+    padding-left: 5px;
+    color: rgb(83, 83, 83);
+ 
     
 }
 main .register-main-checkOptions{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin: 15px;
+    justify-content: space-around;    
 }
 main .register-main-checkbox{
     display: flex;
-    margin: 15px;
+    margin: 5px 5px 5px 0px;
+    padding: 5px 0 5px 0px;
+}
+main .register-main-checkbox .register-main-checkbox-icon{
+    height: 15px;
 }
 main .register-main-checkbox p{
-    font-size: 1em;
+    font-size: small;
     padding-left: 5px;
+    color: rgb(83, 83, 83)
 }
 main .register-main-loadPhoto{
     display: flex;
     font-size: xx-small;
-    margin: 15px;
-    padding: 15px;
+    margin: 15px 0 15px 0;
+
 }
 main .register-main-sendButton{
     display: flex;
     justify-content: center;   
-    background-color:dodgerblue;
-    border-radius: 10px;
+    background-color: cornflowerblue;
+    border-radius: 5px;
     border-style: none;
     outline: none;
     color: #666;
     padding: 5px;
     font-size: 1em;
     width: 100%;
-
 }
 main .register-main-sendButton button{    
-    background-color:dodgerblue;
+    background-color:cornflowerblue;
     border-style: none;
     outline: none;
     color: whitesmoke;
@@ -314,15 +413,20 @@ main .register-main-sendButton button{
 
 
 
-
-
 /*-----------------Media Queries-----------------*/
 /*--------------------Tablet--------------------*/
 
 
 @media (min-width: 361px){
 
-    /*Header other devices*/    
+    /*Header other devices*/
+
+    h3{ padding-top: 35px;
+        padding-left: 10px;   
+        font-size: larger;
+        font-weight: normal;
+        color: #666;
+    }    
      
     header .header-top-bar {                  
         flex-wrap: nowrap;
@@ -336,6 +440,9 @@ main .register-main-sendButton button{
     }
     header .header-top-bar .header-top-form .input{        
         font-size: 0.9em;
+    }
+    header .header-top-bar .header-top-form .submit i{
+        font-size: 1.2em;
     }        
     header .header-top-promo-right{  
         text-align: right;
@@ -369,7 +476,7 @@ main .register-main-sendButton button{
     }    
     header ul li a{    
         text-decoration: none;
-        color: #222222;
+        color: #4b4a4a;
         padding: 5px 0;
         font-size:xx-small;
         text-align: center;
@@ -381,51 +488,68 @@ main .register-main-sendButton button{
 
     /*Main other devices*/
 
+    
 
-    main section article{        
+    main section article.home-main-article{        
         max-width: 48%;
         margin-left: auto;
         margin-right: auto;
     }
-
+    main section article.home-main-article i{        
+        transform: scale(1);   
+    }    
     
-    
-    main section article .main-description .description{
+    main section article.home-main-article .main-description .description{
         display: block;
         font-weight: normal;
         font-size: smaller;
         margin-top: 5px;
         color: #666;
     }     
-    main section article .main-description .price-discount .price{
+    main section article.home-main-article .main-description .price-discount .price{
         font-size: medium;  
     }
-    main section article .main-description .price-discount .discount{
+    main section article.home-main-article .main-description .price-discount .discount{
         font-size: smaller;
     }
     
     
 
-    /*Register main other devices*/
-    main .register-main{     
-        max-width: 60%;            
+
+    /*Login  main other devices*/
+
+    
+    main .login-main-sendButton button{            
+        font-size: 1.2em;
+        background-color: transparent;     
     }
-    main .register-main-shadow{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    main .login-main-buttonHelp a{
+        font-size: medium;
     }
 
+    /*Register main other devices*/
+    main .register-main{     
+        min-width: 50%;            
+    }
+    main .register-main-top-label{
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }    
+    main .register-main-top-label label{
+        font-size: x-large;
+        font-weight: bold;
+        margin: auto;        
+    }    
+    main .register-main-text{
+        transform:scale(0.9);
+    }
     main .register-main p{
-        font-size: large;
-    }
-    main form section .register-main-inputBox{        
-        box-shadow: 0px 0px 5px rgb(100, 100, 100);  
-    }
-    main .register-main-sendButton{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);  
-    }
-    main form section label{
-        font-size: large;
-        font-weight: 800; 
+        font-size: medium;
+    }    
+    
+    main form article .register-main-label label{
+        font-size: small;
+        font-weight: normal; 
         margin: auto;
     }
     main .register-main-loadPhoto{        
@@ -437,13 +561,18 @@ main .register-main-sendButton button{
     }
     main .register-main-checkbox input{        
         width: 1.2em;
+    }    
+
+
+
+
+    footer section article .promotion .fa-footer i{
+        transform: scale(1.2);
     }
-    main .register-main-sendButton:hover{            
-        background-color: #0022AA;
-    }
-    main .register-main-sendButton button:hover{            
-        background-color: #0022AA;
-    }
+
+
+
+   
 }
 
 
@@ -453,17 +582,33 @@ main .register-main-sendButton button{
 
 
 @media (min-width: 769px){
+
+    h3{ padding-top: 35px;
+        padding-left: 10px;   
+        font-size: x-large;
+        font-weight: normal;
+        color: #666;
+    }   
+
     header .header-top-bar{
         max-width: 80%;
     }
     header .header-top-bar .header-top-form .input{        
         font-size: 1.2em;
+    }
+    header .header-top-bar .header-top-form .submit i{
+        font-size: 1.4em;
+        cursor: pointer;
+    }
+    header .header-top-bar .header-top-form:hover .submit{
+        color:#729bda;
     }   
     header .header-bottom-bar{
         max-width: 80%;
     }
     header .header-top-bar .header-top-logo-left .header-logo{        
-        width: 80%;             
+        width: 80%; 
+        cursor: pointer;            
     }
     header .header-top-promo-right{
         font-size: large;
@@ -479,45 +624,49 @@ main .register-main-sendButton button{
         transition: all 0.1s;        
     }
     header ul li a:hover{      
-        color: whitesmoke;
-        transform: scale(1.3);       
+        color: black;
+        cursor: pointer;        
     }        
 
 
+
+
     main section .products{
+        height: 450px;      
         padding-bottom: 50px;  
     }    
 
-    main section article{ 
+    main section article.home-main-article{ 
         max-width: 24%;
         margin-bottom: auto;                
         transition: all 0.1s ease-in-out;
     }
-   /* main section article:hover{
+    main section article.home-main-article:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        transform: scale(1.1);
-        z-index: 1;
-    }*/
-    main section article i{
+        transform: scale(1.07);
+        cursor: pointer;
+    }   
+    main section article.home-main-article i{   
+        transform: scale(1.4);      
         transition: all 0.2s ease-in-out;
     }
-    main section article i:hover{
+    main section article.home-main-article i:hover{
         color: red;
         border: 1px solid red;    
-        transform: rotateY(180deg);
+        transform: rotate(-90deg) scale(1.4);
     }  
-    main section article .main-description .description{
+    main section article.home-main-article .main-description .description{
         display: none;
         font-size: medium;
         transition: all 0s;
     }
-    main section article:hover .main-description .description{
+    main section article.home-main-article:hover .main-description .description{
         display: block;
     }      
-    main section article .main-description .price-discount .price{
+    main section article.home-main-article .main-description .price-discount .price{
         font-size:large;  
     }
-    main section article .main-description .price-discount .discount{
+    main section article.home-main-article .main-description .price-discount .discount{
         font-size: medium;
     }
     
@@ -541,18 +690,13 @@ main .register-main-sendButton button{
     footer .copyright{    
         font-size: 0.9em;
         color: #666;
-        padding: 80px 0px 20px 0px;
+        padding: 150px 0px 20px 0px;
     }
     footer section article .promotion .fa-footer i{
-        background-color: transparent;
-        color: #0044AA;
-        font-size: 2em;
-        height: 40px;
-        margin: 60px 0px 0px 0px;
+        transform: scale(1.4);
         transition: 0.2s;
     }
-    footer section article .promotion .fa-footer i:hover{           
-        
+    footer section article .promotion .fa-footer i:hover{       
         background-color: transparent;
         color: red;
         font-size: 2em;
@@ -561,49 +705,130 @@ main .register-main-sendButton button{
     }
     
 
-    /*@keyframes scaleAnimation{
-        0% {
-            transform: sale(1);
-        }
-        100% {
-            transform: scale(1.5);
-        }
-    }*/
+
+    /*Login main other devices*/
+    main .login-main-sendButton .login-main-sendInfo{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);                  
+    }
+    main .login-main-sendButton button.login-main-sendInfo{    
+        background-color:cornflowerblue;
+        border-style: none;
+        outline: none;
+        color: whitesmoke;
+        padding: 5px;
+        font-size: 1em;    
+        border-radius: 5px;
+        border-style: none;
+        outline: none;
+        height: 50px;
+        font-size: x-large;  
+    }        
+    main .login-main-sendButton .login-main-sendInfo{
+        transition: all 0.3s;
+    }
+    main .login-main-sendButton .login-main-buttonHelp{
+        flex-direction: row; 
+        justify-content: space-between;
+        margin-top: 30px;  
+    }    
+    main .login-main-sendButton .login-main-buttonHelp-left{
+        transition: all 0.3s;
+    } 
+    main .login-main-sendButton .login-main-buttonHelp-right{
+        transition: all 0.3s;
+    }  
+
+    main .login-main-sendButton .login-main-sendInfo:hover{            
+        background-color: #0022AA;
+        cursor:pointer;
+    }
+    main .login-main-sendButton .login-main-buttonHelp-left:hover{            
+        color: #0022AA;
+        cursor:pointer;
+    }
+    main .login-main-sendButton .login-main-buttonHelp-right:hover{            
+        color: #0022AA;
+        cursor:pointer;
+    }    
+    main .login-main-sendButton button{            
+        font-size: 8em;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    main .login-main-buttonHelp a{
+        font-size: x-large;
+    }     
+
+
 
     /*Register main other devices*/
+    main .register-main-shadow{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        background-color: whitesmoke;
+    }
     main .register-main{  
         max-width: 50%;          
     }
     main .register-main p{
-        font-size: x-large;
+        font-size: large;
+    }
+    main .register-main-top-label{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    main .register-main-top-label label{
+        text-shadow:1px 1px 3px grey;
+        font-size: xx-large;
+    }
+    
+    main .register-main-text{
+        transform:scale(0.9);
+    }
+    main .register-main-article{
+        margin-top: 20px;
     }
     main .register-main-checkbox input{        
         width: 2em;
-
+        height: 20px;
     }
-    main form section .register-main-inputBox{
-        background-color: #FFF;
-        border-radius: 5px;
-        border-style: none;
-        outline: none;
-        color: #666;
-        padding: 5px;
-        font-size: 1.5em;
-        width: 90%;
-        height: 50%;
-        margin: 30px;
+    main .register-main-sendButton{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);  
+    }
+    main .register-main-profile input{
+        width: 2em;
+        height: 20px;
+    }
+    main form article .register-main-inputBox{        
+        transition: width .2s ease, border-color .2s ease;
+    }
+    main form article .register-main-inputBox:hover{
+        border-color: #0044AA;
+    }
+    main form article .register-main-inputBox:focus{
+        border-color: #0044AA;
     }
     main .register-main-sendButton button{            
         font-size: 1.8em;
         font-weight: 500;
+        cursor: pointer;
     }
-    main form section label{
-        font-size: x-large;
-        font-weight: bold;
-        margin: auto;
-        padding: 30px 15px 30px 15px; 
+    main form article .register-main-label label{
+        font-size: medium;
+        font-weight: normal;        
     }
     main .register-main-loadPhoto{        
         font-size: large;
-    }      
+    }
+    main .register-main-sendButton{
+        transition: all 0.3s;
+    } 
+
+    main .register-main-sendButton:hover{            
+        background-color: #0022AA;
+        cursor:pointer;
+    }
+    main .register-main-sendButton button:hover{            
+        background-color: transparent;
+        cursor:pointer;        
+    }     
 }

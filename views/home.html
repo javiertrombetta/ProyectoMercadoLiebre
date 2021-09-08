@@ -20,7 +20,7 @@
                     </a> 
                 </div>
                 <form action="/search" method="POST" class="header-top-form">
-                    <input type="search" name="searchbar" placeholder="Buscar productos, marcas y más" class="input">
+                    <input type="search" name="searchbar" placeholder="Buscar productos, marcas y más" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Buscar productos, marcas y más'" class="input">
                     <button type="submit" class="submit">
                         <i class="fa fa-search"></i>
                     </button>                    
@@ -41,7 +41,7 @@
                     <ul class="header-bottom-navbar-right">
                         <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
                         <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                        <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                        <li><a href="/login">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
                     </ul>
                 </nav>
             </div>
@@ -56,7 +56,7 @@
             <section class="last-visit">
                 <h3>Basado en tu última visita</h3>
                 <div class="products">
-                    <article>
+                    <article class= "home-main-article">
                         <img src="images/img-cafetera-moulinex.jpg" alt="Cafetera" class="product_img">
                         <div class="main-description">
                             <i class="fas fa-truck"></i>
@@ -67,7 +67,7 @@
                             <h4 class="description">Cafetera Moulinex</h4>
                         </div>
                     </article>
-                    <article>                         
+                    <article class= "home-main-article">                         
                         <img src="images/img-macbook-pro-2019.jpg" alt="MacBook" class="product_img">
                         <div class="main-description">
                             <i class="fas fa-truck"></i>
@@ -78,7 +78,7 @@
                             <h4 class="description">MacBook Pro 2019</h4>
                         </div>
                     </article>
-                    <article>
+                    <article class= "home-main-article">
                         <img src="images/img-samsung-galaxy-s10.jpg" alt="Teléfono Móvil Samsung Galaxy" class="product_img">
                         <div class="main-description">
                             <i class="fas fa-truck"></i>
@@ -89,7 +89,7 @@
                             <h4 class="description">Samsung Galaxy S10</h4>
                         </div>
                     </article>
-                    <article>
+                    <article class= "home-main-article">
                         <img src="images/img-tv-samsung-smart.jpg" alt="SmartTv Samsung" class="product_img">
                         <div class="main-description">
                             <i class="fas fa-truck"></i>
@@ -105,7 +105,7 @@
             <section class="offers">
                 <h3>Ofertas</h3>
                 <div class="products">
-                    <article>
+                    <article class= "home-main-article">
                         <img src="images/img-cafetera-moulinex.jpg" alt="Cafetera" class="product_img">
                         <div class="main-description">
                             <i class="fas fa-truck"></i>
@@ -116,7 +116,7 @@
                             <h4 class="description">Cafetera Moulinex</h4>
                         </div>
                     </article>
-                    <article>
+                    <article class= "home-main-article">
                         <img src="images/img-macbook-pro-2019.jpg" alt="MacBook" class="product_img">
                         <div class="main-description">
                             <i class="fas fa-truck"></i>
@@ -127,7 +127,7 @@
                             <h4 class="description">MacBook Pro 2019</h4>
                         </div>
                     </article>
-                    <article>
+                    <article class= "home-main-article">
                         <img src="images/img-samsung-galaxy-s10.jpg" alt="Teléfono Móvil Samsung Galaxy" class="product_img">
                         <div class="main-description">
                             <i class="fas fa-truck"></i>
@@ -138,7 +138,7 @@
                         <h4 class="description">Samsung Galaxy S10</h4>
                         </div>
                     </article>
-                    <article>
+                    <article class= "home-main-article">
                         <img src="images/img-tv-samsung-smart.jpg" alt="SmartTv Samsung" class="product_img">
                         <div class="main-description">
                             <i class="fas fa-truck"></i>

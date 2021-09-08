@@ -19,7 +19,7 @@
                 </a> 
             </div>
             <form action="/search" method="POST" class="header-top-form">
-                <input type="search" name="searchbar" aria-label="Buscar productos, marcas y más" class="input">
+                <input type="search" name="searchbar" placeholder="Buscar productos, marcas y más" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Buscar productos, marcas y más'" class="input">
                 <button type="submit" class="submit">
                     <i class="fa fa-search"></i>
                 </button>                    
@@ -47,107 +47,141 @@
         <div class="header-bottom-burger-menu">
             <i class="fa fa-bars burger"></i>
         </div>
-    </header>
-      <main>        
-        <div class="register-main">
-          <!-- Formulario -->
-          <form action="" method="POST" class="register-main-form">
-            <div class="register-main-shadow">
-              <section>
-                <div>
-                  <label>Datos del Usuario(*)</label>
-                </div>         
-                <!-- nombre y apellido -->
-                <div>
-                  <input class="register-main-inputBox" type="text" name="nameAndSurname" minlength="5" required placeholder="Nombre y apellido">
-                </div>          
-                <!-- nombre de usuario -->     
-                <div>
-                  <input class="register-main-inputBox" type="text" name="username" placeholder="Elegí un nombre de usuario"required>
-                </div>            
-                <div>
-                  <!-- dirección de email -->     
-                  <input class="register-main-inputBox" type="email" name="email" placeholder="E-mail" required>
-                </div>
-              </section>
-              <section>
-                <!-- fecha -->
-                <label>Fecha de nacimiento(*)</label>
-                <div>
-                  <input class="register-main-inputBox" type="date" name="birthday" placeholder="dd/mm/yyyy" required>
-                </div>
-              </section> 
-              <!-- domicilio -->
-              <section>
-                <label>Domicilio(*)</label>
-                <div>         
-                  <input class="register-main-inputBox" type="text" name="address" placeholder="Domicilio" required>
-                </dir> 
-              </section>
-              <section>
-                <!-- comparar o vender (RADIO) -->
-                <label>Perfil de usuario</label>
-                  <div class="register-main-radioOptions"> 
-                    <div class="register-main-profile">         
-                      <input type="radio" name="buyer">
-                      <p>Comprador</p>
+      </header>
+      <main>
+        <div class="register-main-show">
+          <section class="register-main-top-label">
+            <label>Completá tus datos</label>
+          </section>        
+          <section class="register-main">
+            <!-- Formulario -->
+            <form action="" method="POST" class="register-main-form">
+              <div class="register-main-shadow">
+                <div class="register-main-text">
+                  <!-- nombre y apellido -->
+                  <article class= "register-main-article">                                    
+                    <div class="register-main-label">
+                      <label>Ingresá tu nombre y apellido(*)</label>
                     </div>
-                    <div class="register-main-profile">
-                      <input type="radio" name="seller">
-                      <p>Vendedor</p>
+                    <div class="register-main-label">
+                      <input class="register-main-inputBox" type="text" name="nameAndSurname" minlength="5" required placeholder="Nombre y apellido" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre y apellido'" class="input">
                     </div>
-                  </div> 
-              </section>
-              <section>
-                <!-- categorías (CHECKBOX) -->
-                <label>Intereses</label>
-                <div class="register-main-checkOptions">
-                  <div class="register-main-checkbox">
-                    <input type="checkbox" name=electro>
-                    <p>Electro</p>
-                  </div>
-                  <div class="register-main-checkbox">
-                    <input type="checkbox" name=moda>
-                    <p>Moda</p>
-                  </div>
-                  <div class="register-main-checkbox">
-                    <input type="checkbox" name=hogar>
-                    <p>Hogar</p>
-                  </div>
-                  <div class="register-main-checkbox">
-                    <input type="checkbox" name=jugueteria>
-                    <p>Juguetería</p>
-                  </div>
-                  <div class="register-main-checkbox">
-                    <input type="checkbox" name=vidaSana>
-                    <p>Vida Sana</p>
-                  </div>
+                  </article>
+                  <!-- nombre de usuario -->
+                  <article class= "register-main-article">                  
+                    <div class="register-main-label">
+                      <label>Elegí un nombre de usuario(*)</label>
+                    </div>     
+                    <div class="register-main-label">
+                      <input class="register-main-inputBox" type="text" name="username" placeholder="Elegí un usuario" required  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Elegí un usuario'" class="input">
+                    </div>
+                  </article>
+                  <!-- email -->
+                  <article class= "register-main-article"> 
+                    <div class="register-main-label">
+                      <label>Ahora tu email(*)</label>
+                    </div>             
+                    <div>                       
+                      <input class="register-main-inputBox" type="email" name="email" placeholder="Ingresá un email" required  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ingresá un email'" class="input">
+                    </div>
+                  </article>
+                  <!-- fecha de nacimiento -->
+                  <article class= "register-main-article">   
+                    <div class="register-main-label">             
+                      <label>Tu fecha de nacimiento(*)</label>
+                    </div>  
+                    <div>
+                      <input class="register-main-inputBox" type="date" name="birthday" placeholder="dd/mm/yyyy" required  onfocus="this.placeholder = ''" onblur="this.placeholder = 'dd/mm/yyyy'" class="input">
+                    </div>
+                  </article> 
+                  <!-- domicilio -->
+                  <article class= "register-main-article">
+                    <div class="register-main-label">
+                      <label>Domicilio en donde vivís(*)</label>
+                    </div>
+                    <div>         
+                      <input class="register-main-inputBox" type="text" name="address" placeholder="Decinos tu domicilio" required  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Decinos tu domicilio'" class="input">
+                    </div> 
+                  </article>
+                  <!-- perfil -->
+                  <article class= "register-main-article">
+                    <div class="register-main-label">               
+                      <label>Tu perfil de usuario</label>
+                    </div> 
+                      <div class="register-main-radioOptions"> 
+                        <div class="register-main-profile">         
+                          <input type="radio" id="buyer" name= "profile" value= "profile-buyer" class="register-main-optionselect">
+                          <p>Comprador</p>
+                        </div>
+                        <div class="register-main-profile">
+                          <input type="radio" id="seller" name= "profile" value= "profile-seller" class="register-main-optionselect">
+                          <p>Vendedor</p>
+                        </div>
+                      </div> 
+                  </article>
+                  <!-- categorías -->
+                  <article class= "register-main-article">
+                    <div class="register-main-label">              
+                      <label>Intereses que tengas</label>
+                    </div>
+                      <div class="register-main-checkOptions">
+                        <div class="register-main-checkbox">
+                          <input type="checkbox" name=electro class="register-main-checkbox-icon">
+                          <p>Electro</p>
+                        </div>
+                        <div class="register-main-checkbox">                  
+                          <input type="checkbox" name=moda class="register-main-checkbox-icon">
+                          <p>Moda</p>
+                        </div>
+                        <div class="register-main-checkbox">
+                          <input type="checkbox" name=hogar class="register-main-checkbox-icon">
+                          <p>Hogar</p>
+                        </div>
+                        <div class="register-main-checkbox">
+                          <input type="checkbox" name=jugueteria class="register-main-checkbox-icon">
+                          <p>Juguetería</p>
+                        </div>
+                        <div class="register-main-checkbox">
+                          <input type="checkbox" name=vidaSana class="register-main-checkbox-icon">
+                          <p>Vida Sana</p>
+                        </div>
+                      </div>
+                  </article> 
+                  <!-- foto type="file" accept=".jpg" -->             
+                  <article class= "register-main-article">
+                    <div class="register-main-label">                
+                      <label>Cargá tu foto</label>
+                    </div>
+                    <div class="register-main-loadPhoto">
+                      <input type="file" name=photo accept=".jpg .png">
+                    </div>
+                  </article>
+                  <!-- contraseña --> 
+                  <article class= "register-main-article">
+                    <div class="register-main-label">
+                    <label>Escribí una contraseña(*)</label>
+                    </div>
+                    <div>
+                      <input class="register-main-inputBox" type="password" name="password" placeholder="Mínimo de 5 caracteres" required  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mínimo de 5 caracteres'" minlength="5" class="input">
+                    </div>
+                  </article>
+                  <!-- volver a escribir contraseña -->
+                  <article class= "register-main-article">
+                    <div class="register-main-label">
+                      <label>Volvé a escribir la contraseña(*)</label>
+                    </div>
+                    <div>
+                      <input class="register-main-inputBox" type="password" name="recheckPassword" placeholder="Volvé a escribirla" required  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Volvé a escribirla'" minlength="5" class="input">
+                    </div>
+                  </article>
                 </div>
-              </section>
-              <!-- foto type="file" accept=".jpg" -->
-              <section>
-                <label>Cargá tu foto</label>
-                <div class="register-main-loadPhoto">
-                  <input type="file" name=photo accept=".jpg .png">
-                </div>
-              </section>
-              <section>
-                <label>Contraseña(*)</label>
-                <div>
-                  <input class="register-main-inputBox" type="password" name="password" placeholder="Ingrese una contraseña" required>
-                </div>
-              </section>
-              <section>
-                <label>Confirmar contraseña(*)</label>
-                <div>
-                  <input class="register-main-inputBox" type="password" name="recheckPassword" placeholder="Ingrese de nuevo la contraseña" required>
-                </div>
-              </section>
-            </div>            
-            <div class="register-main-sendButton">            
-              <button type="submit">Registrarse</button>
-            </div>              
-          </form>
+              </div> 
+              <!-- botón de registrarse -->           
+              <div class="register-main-sendButton">            
+                <button type="submit">Continuar</button>
+              </div>              
+            </form>
+          </section>
         </div>
       </main>
       <footer>            
