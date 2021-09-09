@@ -45,14 +45,15 @@ main form article .register-main-label label{
 main form article .register-main-inputBox{
     background-color: transparent;
     border-bottom: lightgrey;
-    border-top-style:hidden;
-    border-bottom-style:groove;
+    border-top-style: hidden;
+    border-bottom-style: groove;
     border-left-style: hidden;
     border-right-style: hidden;
     outline: none;   
     color: black;
     padding: 3px;
-    font-size: 1em;
+    font-size: small;
+    font-weight: bold;
     width: 100%;
     height: 50%;
     margin: 15px 0px 15px 0px;
@@ -144,7 +145,10 @@ main .register-main-sendButton button{
     main .register-main p{
         font-size: medium;
     }    
-    
+    main form article .register-main-inputBox{
+        font-size: large;
+        font-weight: bold;
+    }
     main form article .register-main-label label{
         font-size: small;
         font-weight: normal; 
@@ -209,7 +213,10 @@ main .register-main-sendButton button{
         width: 2em;
         height: 20px;
     }
-    main form article .register-main-inputBox{        
+    
+    main form article .register-main-inputBox{   
+        font-size: large;
+        font-weight: bold;     
         transition: width .2s ease, border-color .2s ease;
     }
     main form article .register-main-inputBox:hover{

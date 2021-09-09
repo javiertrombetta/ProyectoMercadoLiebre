@@ -124,10 +124,12 @@ main .login-main-buttonHelp a{
     }
     main .login-main-sendButton .login-main-buttonHelp-left:hover{            
         color: #0022AA;
+        text-shadow:1px 1px 3px grey;
         cursor:pointer;
     }
     main .login-main-sendButton .login-main-buttonHelp-right:hover{            
         color: #0022AA;
+        text-shadow:1px 1px 3px grey;
         cursor:pointer;
     }    
     main .login-main-sendButton button{            

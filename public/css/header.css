@@ -129,7 +129,7 @@ header .header-bottom-burger-menu i{
         color: #4b4a4a;
         padding: 5px 0;
         font-size:xx-small;
-        text-align: center;
+        text-align: center;        
     }        
     header .header-bottom-burger-menu{
         display: none;
@@ -154,7 +154,7 @@ header .header-bottom-burger-menu i{
         cursor: pointer;
     }
     header .header-top-bar .header-top-form:hover .submit{
-        color:#729bda;
+        color: #EAC926;
     }   
     header .header-bottom-bar{
         max-width: 80%;
@@ -169,11 +169,10 @@ header .header-bottom-burger-menu i{
     }
     
     header ul li{
-        padding: 10px 15px 10px 15px;     
-
+        padding: 10px 15px 10px 15px;
     }    
     header ul li a{    
-        font-size:1.3em;
+        font-size:1.3em;        
         transition: all 0.1s;        
     }
     header ul li a:hover{      
