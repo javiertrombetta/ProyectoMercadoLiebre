@@ -104,7 +104,7 @@ main section article.home-main-article .main-description .description{
 
     /*Main for desktops*/
     main section .products{
-        height: 500px;      
+        height: 400px;      
         padding-bottom: 50px;
         opacity: 1;
         animation: fadeIn 1.5s ease;  
